@@ -1,0 +1,126 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+body {
+  padding: 1%;
+  min-height: 1000px;
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 20px 1px black; */
+}
+
+#explanation {
+  display: block;
+  margin: 1% auto;
+  padding: 1%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+p {
+  font-size: 1.25em;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 5px;
+  padding: .75% 1.25%;
+  margin-left: 0.5%;
+}
+button:hover {
+  background: rgba(60, 60, 60, 0.75);
+  cursor: pointer;
+}
+
+input {
+  color: black;
+  padding: 0.5% 1%;
+  font-size: 1em;
+}
+
+.header,
+#dateInsert,
+#titleInsert {
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.subtext {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75em
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+}
+
+/* BACKGROUND */
+body {
+  background: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2.0);
+  cursor: zoom-out;
+}
+
+#titleInsert {
+  font-style: italic;
+}
+
+.hidden {
+  visibility: none;
+}
